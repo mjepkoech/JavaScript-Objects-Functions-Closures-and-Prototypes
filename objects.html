@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title>PHP User Registration Form</title>
+<title>Javascript object demo</title>
 <style>
 body{
 	width:610px;
@@ -38,45 +38,32 @@ body{
 	margin-left: 10px;
 }
 </style>
-	<script>
-	var car = "Nissan";
-	document.getElementById("main").innerHTML = car;
-	</script>
 </head>
-<body>
-<form name="frmRegistration" method="post" action="">
-<table border="0" width="500" align="center" class="demo-table">
-<tr>
-	<td>Username</td>
-	<td><p id="main"></p></td>
 
-	<script>
-	var user = "Millicent";
-	document.getElementById("main").innerHTML = user;
-	</script>
-</tr>
-<tr>
-<td>Password</td>
-<td><input type="password" class="demoInputBox" name="password" value=""></td>
-</tr>
-<tr>
-<td>Confirm Password</td>
-<td><input type="password" class="demoInputBox" name="confirm_password" value=""></td>
-</tr>
-<tr>
-<td>Email</td>
-<td><input type="text" class="demoInputBox" name="userEmail" value=""></td>
-</tr>
-<tr>
-<td>Gender</td>
-<td><input type="radio" name="gender" value="Male"> Male
-<input type="radio" name="gender" value="Female"> Female
-</td>
-</tr>
-<tr>
-<td colspan=2>
-<input type="checkbox" name="terms"> I accept Terms and Conditions <input type="submit" name="register-user" value="Register" class="btnRegister"></td>
-</tr>
-</table>
+<body>
+<form>
+    <table border="0" width="500" align="center" class="demo-table">
+        <th>Objects Demo</th>
+        <tr>
+            <td>Username</td>
+            <td><p id="main"></p></td>
+            <script>
+                var user = "Millicent";
+                document.getElementById("main").innerHTML = user;
+            </script>
+        </tr>
+        <tr>
+            <td>Enter Password</td>
+            <td><input type="password" class="demoInputBox" name="password" value="">
+            </td>
+        </tr>
+        <tr>
+            <td colspan=2>
+                <input type="checkbox" name="terms"> I accept Terms and Conditions
+                <input type="submit" name="register-user" value="Register" class="btnRegister">
+            </td>
+        </tr>
+    </table>
 </form>
-</body></html>
+</body>
+</html>

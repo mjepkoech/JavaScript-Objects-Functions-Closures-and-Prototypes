@@ -1,7 +1,7 @@
 
 <html>
 <head>
-<title>PHP User Registration Form</title>
+<title>Prototypes demo</title>
 <style>
 body{
 	width:610px;
@@ -28,21 +28,26 @@ body{
 <body>
 <form name="frmRegistration" method="" action="">
 <table border="0" width="500" align="center" class="demo-table">
-<tr><td>Demonstration of prototypes</td></tr><tr>
-<tr><td><p id="demoarea"></p>
+    <th>Prototypes Demo</th>
+    <tr>
+		<td>This demo gets the ages of two people whose prototype is function person</td>
+	</tr>
+	<tr>
+		<td><p id="demoarea"></p>
+			<script>
+				function Person(first, last, age, eye) {
+					this.firstName = first;
+					this.lastName = last;
+					this.age = age;
+					this.eyeColor = eye;
+				}
+				var myFather = new Person("Sharo", "Kim", 20, "normal");
+				var myMother = new Person("Eva", "Mwangi", 30, "normal");
 
-<script>
-function Person(first, last, age, eye) {
-    this.firstName = first;
-    this.lastName = last;
-    this.age = age;
-    this.eyeColor = eye;
-}
-var myFather = new Person("Sharo", "Kim", 20, "normal");
-var myMother = new Person("Eva", "Mwangi", 30, "normal");
-document.getElementById("demoarea").innerHTML =
-"Father: " + myFather.age + " Mother: " + myMother.age; 
-</script></td></tr>
+				document.getElementById("demoarea").innerHTML = "Father: " + myFather.age + " Mother: " + myMother.age;
+			</script>
+		</td>
+	</tr>
 </table>
 </form>
 

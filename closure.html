@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>PHP User Registration Form</title>
+<title>closure demo</title>
 <style>
 body{
 	width:610px;
@@ -33,45 +33,41 @@ body{
 	border-radius: 4px;
 	margin-left: 10px;
 }
-
 </style>
-	<script>
-	var car = "Nissan";
-	document.getElementById("main").innerHTML = car;
-	</script>
+
 </head>
-<body>
+</body>
 <form name="frmRegistration" method="post" action="">
 <table border="0" width="500" align="center" class="demo-table">
-<tr>
-	<td>First Number</td>
-	<td><p id="main"></p></td>
-
-	<script>
-	var first = "5";
-	document.getElementById("main").innerHTML = first;
-	</script>
-</tr>
-<tr>
-	<td>Second Number</td>
-	<td><p id="second"></p></td>
-
-	<script>
-	var second = "5";
-	document.getElementById("second").innerHTML = second;
-	</script>
-</tr>
-<tr>
-<td><button type="button" onclick="myFunction()" class="btnRegister">Find Result!</button></td>
-
-<td><p id="result"></p>
-
-<script>
-var a = 5;
-function myFunction() {
-    document.getElementById("result").innerHTML = a * a;
-} 
-</script></td></tr>
+    <th>Closures Demo</th>
+    <tr>
+        <td>First Number</td>
+        <td><p id="main"></p></td>
+        <script>
+            var first = "5";
+            document.getElementById("main").innerHTML = first;
+        </script>
+    </tr>
+    <tr>
+        <td>Second Number</td>
+        <td><p id="second"></p></td>
+        <script>
+            var second = "5";
+            document.getElementById("second").innerHTML = second;
+        </script>
+    </tr>
+    <tr>
+        <td><button type="button" onclick="myFunction()" class="btnRegister">Find Result!</button></td>
+        <td><p id="result"></p>
+            <script>
+                var a = 5;
+                function myFunction() {
+                    document.getElementById("result").innerHTML = a * a;
+                }
+            </script>
+        </td>
+    </tr>
 </table>
 </form>
-</body></html>
+</body>
+</html>

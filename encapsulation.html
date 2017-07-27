@@ -1,30 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
- <title>Trailblazer company</title>
-    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+<head>
+	<meta charset="utf-8">
+	<title>Encapsulation demo</title>
+	<link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
-  <body>
-  	<div class="item active">
-		<img src="images/slide2.jpg" class="img-responsive" alt=""> 
-	</div>
+<body>
+<div class="item active">
+	<h4>Encapsulation Demo</h4>
+	<img src="images/slide2.jpg" class="img-responsive" alt="">
+</div>
 
 </body>
 <script>
-   (function() { 
-      var x = '';
+	(function() {
+		var x = '';
 
-      function myFunction () {
-         alert('Hello: ' + x);
-      }
+		function myFunction () {
+			alert('Hello: ' + x);
+		}
 
-      x = 'Customer';
-      myFunction();
+		x = 'Customer';
+		myFunction();
 
-      alert(typeof x);            // string
-      alert(typeof myFunction);   // function
-   })();      // undefined
+		alert(typeof x);            // string
+		alert(typeof myFunction);   // function
+	})();    // undefined
 </script>
 </html>
