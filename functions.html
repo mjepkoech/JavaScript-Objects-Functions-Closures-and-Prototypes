@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHP User Registration Form</title>
+<style>
+body{
+	width:610px;
+	font-family:calibri;
+}
+
+.demo-table {
+	background: #d9eeff;
+	width: 100%;
+	border-spacing: initial;
+	margin: 2px 0px;
+	word-break: break-word;
+	table-layout: auto;
+	line-height: 1.8em;
+	color: #333;
+	border-radius: 4px;
+	padding: 20px 40px;
+}
+.demo-table td {
+	padding: 15px 0px;
+}
+</style>
+	<script>
+	var car = "Nissan";
+	document.getElementById("main").innerHTML = car;
+	</script>
+</head>
+<body>
+<form name="frmRegistration" method="post" action="">
+<table border="0" width="500" align="center" class="demo-table">
+<tr>
+	<td>First Number</td>
+	<td><p id="main"></p></td>
+
+	<script>
+	var first = "10";
+	document.getElementById("main").innerHTML = first;
+	</script>
+</tr>
+<tr>
+	<td>Second Number</td>
+	<td><p id="second"></p></td>
+
+	<script>
+	var second = "12";
+	document.getElementById("second").innerHTML = second;
+	</script>
+</tr>
+<tr>
+	<td>Results</td>
+	<td><p id="jsfunction"></p></td>
+	<script>
+	function myFunction(p1, p2) {
+	    return p1 * p2;
+	}
+	document.getElementById("jsfunction").innerHTML = myFunction(10, 12);
+	</script>
+</tr>
+</table>
+</form>
+</body></html>

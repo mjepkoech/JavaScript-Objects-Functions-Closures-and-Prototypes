@@ -1,0 +1,50 @@
+
+<html>
+<head>
+<title>PHP User Registration Form</title>
+<style>
+body{
+	width:610px;
+	font-family:calibri;
+}
+
+.demo-table {
+	background: #d9eeff;
+	width: 100%;
+	border-spacing: initial;
+	margin: 2px 0px;
+	word-break: break-word;
+	table-layout: auto;
+	line-height: 1.8em;
+	color: #333;
+	border-radius: 4px;
+	padding: 20px 40px;
+}
+.demo-table td {
+	padding: 15px 0px;
+}
+</style>
+</head>
+<body>
+<form name="frmRegistration" method="" action="">
+<table border="0" width="500" align="center" class="demo-table">
+<tr><td>Demonstration of prototypes</td></tr><tr>
+<tr><td><p id="demoarea"></p>
+
+<script>
+function Person(first, last, age, eye) {
+    this.firstName = first;
+    this.lastName = last;
+    this.age = age;
+    this.eyeColor = eye;
+}
+var myFather = new Person("Sharo", "Kim", 20, "normal");
+var myMother = new Person("Eva", "Mwangi", 30, "normal");
+document.getElementById("demoarea").innerHTML =
+"Father: " + myFather.age + " Mother: " + myMother.age; 
+</script></td></tr>
+</table>
+</form>
+
+</body>
+</html>
